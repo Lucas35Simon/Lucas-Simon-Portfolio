@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Simon - Portfolio | Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation avec Onglets -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Lucas Simon</div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-tab active" data-tab="accueil">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-tab" data-tab="apropos">À Propos</a></li>
+                    <li><a href="#competences" class="nav-tab" data-tab="competences">Compétences</a></li>
+                    <li><a href="#projets" class="nav-tab" data-tab="projets">Projets</a></li>
+                    <li><a href="#contact" class="nav-tab" data-tab="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Je suis <span class="highlight">développeur web passionné</span> créant des expériences numériques innovantes</p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bonjour ! Je m'appelle <strong>Lucas Simon</strong> et je suis un développeur web talentueux avec une passion pour la création de solutions web modernes et efficaces.</p>
+                    <p>Avec une expérience en développement front-end et back-end, j'aime transformer des idées en applications fonctionnelles et esthétiques.</p>
+                    <p>Mon objectif est de créer des expériences utilisateur exceptionnelles en combinant design, technologie et innovation.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><strong>Localisation:</strong> France</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><strong>Email:</strong> lucas@example.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p><strong>Téléphone:</strong> +33 6 XX XX XX XX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="avatar">LS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences avec Onglets -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            
+            <!-- Onglets de Compétences -->
+            <div class="tabs-container">
+                <div class="tabs-buttons">
+                    <button class="tab-button active" data-tab="frontend">Front-end</button>
+                    <button class="tab-button" data-tab="backend">Back-end</button>
+                    <button class="tab-button" data-tab="tools">Outils</button>
+                </div>
+                
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-html5"></i>
+                            <h3>HTML5</h3>
+                            <p>Structure sémantique et accessibilité</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <p>Responsive design et animations</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h3>JavaScript</h3>
+                            <p>ES6+, DOM, Fetch API</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>
+                            <p>Hooks, State, Components</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Node.js</h3>
+                            <p>Serveurs et applications</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h3>MongoDB</h3>
+                            <p>Bases de données NoSQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                            <p>Django, Flask, Scripts</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-server"></i>
+                            <h3>Express.js</h3>
+                            <p>Framework minimaliste</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <h3>Git & GitHub</h3>
+                            <p>Contrôle de version</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <h3>VS Code</h3>
+                            <p>Éditeur principal</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-palette"></i>
+                            <h3>Figma</h3>
+                            <p>Design et prototypage</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-terminal"></i>
+                            <h3>Terminal/CLI</h3>
+                            <p>npm, webpack, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder">Projet 1</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Titre du Projet 1</h3>
+                        <p>Description courte de votre premier projet. Expliquez les technologies utilisées et l'objectif du projet.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Voir le projet</a>
+                            <a href="#" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder">Projet 2</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Titre du Projet 2</h3>
+                        <p>Description courte de votre deuxième projet. Expliquez les technologies utilisées et l'objectif du projet.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Voir le projet</a>
+                            <a href="#" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder">Projet 3</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Titre du Projet 3</h3>
+                        <p>Description courte de votre troisième projet. Expliquez les technologies utilisées et l'objectif du projet.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Voir le projet</a>
+                            <a href="#" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Expérience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Titre du Poste 1</h3>
+                        <p class="timeline-date">2023 - Présent | Nom de l'Entreprise</p>
+                        <p>Description de vos responsabilités et accomplissements au poste 1.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Titre du Poste 2</h3>
+                        <p class="timeline-date">2022 - 2023 | Nom de l'Entreprise</p>
+                        <p>Description de vos responsabilités et accomplissements au poste 2.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Titre du Poste 3</h3>
+                        <p class="timeline-date">2021 - 2022 | Nom de l'Entreprise</p>
+                        <p>Description de vos responsabilités et accomplissements au poste 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Formation</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Diplôme ou Certification 1</h3>
+                    <p>Établissement | 2022</p>
+                    <p>Description brève de votre formation.</p>
+                </div>
+                <div class="education-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Diplôme ou Certification 2</h3>
+                    <p>Établissement | 2021</p>
+                    <p>Description brève de votre formation.</p>
+                </div>
+                <div class="education-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Diplôme ou Certification 3</h3>
+                    <p>Établissement | 2020</p>
+                    <p>Description brève de votre formation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>lucas@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 6 XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p>France</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lucas Simon</h3>
+                    <p>Développeur Web | Créateur d'Expériences Numériques</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lucas Simon. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
