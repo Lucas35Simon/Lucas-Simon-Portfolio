@@ -39,13 +39,23 @@ tabButtons.forEach(button => {
     });
 });
 
-// === Navigation Onglets Principale ===
-const navTabs = document.querySelectorAll('.nav-tab');
-
-navTabs.forEach(tab => {
-    tab.addEventListener('click', (e) => {
-        navTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+// === Mise à jour de la Navigation au Scroll ===
+window.addEventListener('scroll', () => {
+    let current = '';
+    
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    document.querySelectorAll('.nav-tab').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-tab') === current) {
+            link.classList.add('active');
+        }
     });
 });
 
@@ -123,25 +133,5 @@ if (contactForm) {
         }
     });
 }
-
-// === Navigation active au scroll ===
-window.addEventListener('scroll', () => {
-    let current = '';
-    
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    document.querySelectorAll('.nav-tab').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('data-tab') === current) {
-            link.classList.add('active');
-        }
-    });
-});
 
 console.log('Portfolio chargé avec succès! 🎉');

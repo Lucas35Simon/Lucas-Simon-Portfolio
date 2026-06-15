@@ -1,7 +1,7 @@
 /* === Variables Globales === */
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #ec4899;
+    --primary-color: #0066ff;
+    --secondary-color: #0099ff;
     --dark-bg: #0f172a;
     --light-bg: #f8fafc;
     --text-dark: #1e293b;
@@ -25,7 +25,7 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    background: linear-gradient(135deg, #0099ff 0%, #00ccff 25%, #00ffff 50%, #0066ff 75%, #0033ff 100%);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
     line-height: 1.6;
@@ -82,6 +82,7 @@ body {
     list-style: none;
     gap: 0.5rem;
     margin-left: 3rem;
+    flex-wrap: wrap;
 }
 
 .nav-tab {
@@ -95,10 +96,11 @@ body {
     display: inline-block;
     background-color: transparent;
     border: 2px solid transparent;
+    white-space: nowrap;
 }
 
 .nav-tab:hover {
-    background-color: rgba(99, 102, 241, 0.1);
+    background-color: rgba(0, 102, 255, 0.1);
     border-color: var(--primary-color);
 }
 
@@ -210,7 +212,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.5);
 }
 
 .btn-secondary {
@@ -340,7 +342,7 @@ body {
     font-size: 4rem;
     font-weight: bold;
     color: var(--white);
-    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 102, 255, 0.3);
 }
 
 /* === Skills Section === */
@@ -385,7 +387,7 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-color: var(--primary-color);
     color: var(--white);
-    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 102, 255, 0.4);
 }
 
 .tab-content {
@@ -427,7 +429,7 @@ body {
 .skill-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 102, 255, 0.3);
 }
 
 .skill-card i {
@@ -510,7 +512,7 @@ body {
 }
 
 .tag {
-    background-color: rgba(99, 102, 241, 0.2);
+    background-color: rgba(0, 102, 255, 0.2);
     color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 20px;
@@ -607,7 +609,7 @@ body {
 }
 
 .education-card {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 153, 255, 0.1));
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -754,7 +756,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(99, 102, 241, 0.2);
+    background-color: rgba(0, 102, 255, 0.2);
     border-radius: 50%;
     transition: var(--transition);
 }
@@ -767,7 +769,7 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    border-top: 1px solid rgba(0, 102, 255, 0.2);
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -844,6 +846,10 @@ body {
     .tabs-buttons {
         flex-direction: column;
     }
+
+    .nav-links {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -866,6 +872,11 @@ body {
     }
 
     .nav-links {
-        margin-left: 0;
+        gap: 0.25rem;
+    }
+
+    .nav-tab {
+        padding: 8px 12px;
+        font-size: 0.9rem;
     }
 }
